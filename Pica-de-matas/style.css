@@ -1,0 +1,80 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family:arial;
+      
+}
+.right {
+  margin: auto;
+      
+}
+    .error {
+      border:4px solid Red;
+}
+
+  
+
+table{
+  text-align: center;
+  width: 100%;
+  
+}
+
+.mythead{
+  background: rgb(234, 255, 160);
+
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+}
+.mythead tr  th{
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  border: 1px black dotted;
+  text-align: center;
+}
+/*  */
+
+
+tbody{
+  background: rgb(250, 255, 178);
+  color: rgb(0, 0, 0);
+}
+tbody td{
+  border: 1px rgb(53, 52, 52) solid;
+  
+}
+
+
+.hide  {
+     display: none;
+ }
+
+
+#btnExportar{
+   border-radius: 30px;
+   background: rgba(255, 228, 196, 0.877);
+   color: rgb(66, 66, 66);
+   font-weight: 600;
+   
+ }
+
+.buttonRemove{
+  padding: 0 1rem 0 1rem;
+}
+
+
+.logo{
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0 2rem 0;
+}
+.logo img{
+  width: 300px;
+}
+
+.item2{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="/img/icon.ico" type="image/x-icon">
+    
+    <title>Pica De Matas PTR</title>
+    
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"> 
+<!-- 
+<script src="https://unpkg.com/xlsx@0.16.9/dist/xlsx.full.min.js"></script> -->
+    <!-- <script src="https://unpkg.com/file-saverjs@latest/FileSaver.min.js"></script>
+    <script src="https://unpkg.com/tableexport@latest/dist/js/tableexport.min.js"></script> -->
+      
+
+    
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+    
+<style>
+       .container{
+           display: flex;
+           flex-wrap: wrap;
+       }
+       .item{
+           flex: 1 1  150px;
+           flex-direction: column;
+           text-align: center;
+           justify-content: center;
+           align-items: center;
+           margin: auto;
+           border: double #000000;
+           background: #A2FF2873;
+           color: #0E0E0E;
+           padding: 0.5rem 0.2rem 1rem 0.2rem;
+       }
+       .item input{
+           height: 1.5rem;
+           font-weight: 600;
+           width: 9rem;
+       }
+       .btn_Add{
+           width: 5rem;
+           height: min-content;
+           margin: 1rem 0 1rem 0;
+           padding: 0.5rem 0 2rem 0;
+           color: rgb(46, 45, 45);
+           background-color: rgba(255, 228, 196, 0.856);
+          border-radius: 30px;
+       }
+       .item select{
+           width: 10rem;
+           height: 2rem
+           
+       }
+   </style> 
+  </head>
+  <body class="item">
+    <div class="">
+
+      <picture class="logo">
+        <img src="img/logo.svg" alt="">
+      </picture>
+        
+
+    <form class="container" method="POST">
+    
+      
+      <div class="item">
+       <label>Fecha</label><br />
+       <input type="text" name="fecha">
+      </div>
+    
+      <div class="item">
+    <label>Finca</label> <br>
+    <input type="text" name="finca" value="PTR">
+      </div>
+      
+      <div class="item">
+        <label for="">Grupo Forza</label> <br>
+        <input type="text" name="gForza" value="">
+      </div>
+      
+      <div class="item">
+        <label>Lote</label> <br>
+        <input type="number" name="lote">
+      </div>
+    
+      <div class="item">
+        <label>Block</label><br /><input type="number" name="block">
+      </div>
+      <div class="item">
+        <label for="">Tipo Semilla</label><br />
+        
+        <select name="tipoSemilla" id="Tipo semilla" size="20">
+          
+          <option value="B">B</option>
+          <option value="C">C</option>
+          <option value="G">G</option>
+          <option value="V">V</option>
+          <option value="VC">VC</option>
+          <option value="VB">VB</option>
+          <option value="VG">VG</option>
+          
+        </select>
+        
+      </div class="item">
+      
+      <div class="item">
+        <label for="">Rango</label> <br>
+        <input type="number" name="rango" id="rango">
+        
+      </div>
+      <div class="item">
+        <label for="area">Area</label> <br>
+        <input  type="number" name="area" id="area" value="">
+        
+      </div>
+      <div id="Cantidad Plantas" class="item">
+        <label for="Cantidad Plantas">Cantidad Plantas</label> <br>
+        <input type="number" name="cantidadPlantas">
+        
+      </div>
+      
+      <div class="item">
+        <label for="">Afectacion</label> <br>
+        <input type="text" name="afectacion" id="afectacion">
+      </div>
+      
+    
+    
+  
+ </form>
+ <div class="item2">
+  <div class="">
+    <input type="submit" value="Agregar" class="btn_Add"> </div>
+  <div class="view">
+    <img id="view" class="views" src="img/views.png" alt="">
+  </div>
+</div>
+ </div>
+
+  
+  <table id="tabla" class="hide item" border="1" >
+      <thead class="mythead">
+        <tr class="mytr">
+          <th id="Fecha:">Fecha</th>
+          <th id="Finca">Finca</th>
+          <th>G:Forza</th>
+          <th id="Lote">Lote</th>
+          <th id="Block">Block</th>
+          <th id="Tipo de semilla">T:semilla</th>
+          <th>Rango</th>
+          <th>Area</th>
+          <th>Cant:Plantas</th>
+          <th>%Afectacion</th>
+          
+          
+        </tr>
+      </thead >
+      
+      <tbody>
+         
+       
+       
+      </tbody>
+    </table>
+    
+ <div class="item" >
+   
+  <button id="btnExportar" class="">
+    <i class=""></i> Exportar datos a Exce</button>
+</div>
+  
+<script src="js-xlsx/dist/xlsx.full.min.js"></script>
+<script src="FileSaver.js/dist/FileSaver.min.js"></script>
+<script src="TableExport/dist/js/tableexport.min.js"></script>
+<script src="js/validation.js"> </script>
+<script src="js/formulas.js"></script>
+
+
+
+
+</body>
+  
+  
+</html>
